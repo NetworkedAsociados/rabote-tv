@@ -50,6 +50,7 @@ html,body{height:100%;background:var(--fondo);color:#fff;font-family:"Segoe UI",
     <div class="negocio" id="negocio"></div>
     <div class="dato">📍 <span id="dir"></span></div>
     <div class="dato">🕗 <span id="horario"></span></div>
+    <div class="dato" id="patdato">🎤 <span id="pat"></span></div>
     <div class="dato">📱 <span id="redes"></span></div>
     <div class="codigo">
       <small>Código para jugar</small>
@@ -84,6 +85,8 @@ function txt(v){return (v==null?"":String(v));}
 function ponerNegocio(t){
   $("negocio").textContent=txt(t.neg)||txt(t.b)||"RABOTE";
   $("dir").textContent=[txt(t.dir),txt(t.b)].filter(Boolean).join(" · ")||"";
+  $("pat").textContent=txt(t.pat)?"Patrocinado por: "+txt(t.pat):"";
+  $("patdato").style.display=txt(t.pat)?"":"none";
   $("horario").textContent=txt(t.hor);
   $("redes").textContent=txt(t.red);
   $("codigo").textContent=txt(t.cd)||COD;
@@ -100,7 +103,8 @@ function pintarTabla(lista,nuevo){
 function esc(v){return txt(v).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
 function vaciar(msg){
   T=null;
-  const datos={negocio:"RABOTE Play",dir:"Torneos de local en bares y tiendas",horario:"",redes:"@johnhansensp",codigo:"",torneo:"Torneos de local",reglas:"Tejo · Rana · Bolirana en tu celular",reloj:"",estado:""};
+  const datos={negocio:"RabotePlay - Torneo Barrio (Nombre local)",dir:"Torneo en vivo",pat:"Patrocinado por: (Streamer o local)",horario:"(Hora por confirmar)",redes:"@johnhansensp (Configura tu evento)",codigo:"",torneo:"Torneos de local",reglas:"Tejo · Rana · Bolirana en tu celular",reloj:"",estado:""};
+  $("patdato").style.display="";
   Object.keys(datos).forEach(id=>$(id).textContent=datos[id]);
   $("cinta").innerHTML=["🎯 Juega gratis: descarga RABOTE en Play Store","🇨🇴 Tejo, Rana y Bolirana en tu celular"].concat(["🎯 Juega gratis: descarga RABOTE en Play Store","🇨🇴 Tejo, Rana y Bolirana en tu celular"]).map(x=>"<span>"+x+"</span>").join("");
   $("tabla").innerHTML='<div class="vacio">'+esc(msg)+'<br><small>Juega desde RABOTE → Torneos → Locales</small></div>';
