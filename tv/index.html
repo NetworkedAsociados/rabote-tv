@@ -125,14 +125,14 @@ async function cargar(){
 }
 function estado(){
   const a=Date.now(), ini=Number(T.ini), fin=Number(T.fin);
-  if(a<ini)return "empieza en "+fmt(Math.floor((ini-a)/1000));
+  if(a<ini)return "para empezar";
   if(a<=fin)return "para terminar";
   return "¡torneo terminado!";
 }
 function reloj(){
   if(!T){return;}
-  const a=Date.now(),fin=Number(T.fin);
-  const s=Math.max(0,Math.floor((fin-a)/1000));
+  const a=Date.now(),ini=Number(T.ini),fin=Number(T.fin);
+  const s=Math.max(0,Math.floor(((a<ini?ini:fin)-a)/1000));   // antes de empezar: cuenta regresiva al inicio
   $("reloj").textContent=fmt(s);
   $("estado").textContent=estado();
 }
