@@ -1,0 +1,22 @@
+{
+  "android": {
+    "codigo": 18,
+    "nombre": "1.0.17",
+    "novedades": [
+      "Retas del barrio en escalera: de 1 vs 1 a 1 vs 8",
+      "Álbum con 31 cartas coleccionables",
+      "Torneo semanal: un intento cada 4 horas"
+    ]
+  },
+  "ios": {
+    "codigo": 0,
+    "nombre": "",
+    "novedades": []
+  },
+  "mensaje": {
+    "id": 0,
+    "titulo": "",
+    "texto": "",
+    "hasta": ""
+  }
+}
