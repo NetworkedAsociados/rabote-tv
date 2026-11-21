@@ -9,9 +9,14 @@
     ]
   },
   "ios": {
-    "codigo": 0,
-    "nombre": "",
-    "novedades": []
+    "codigo": 20,
+    "nombre": "1.0.20",
+    "novedades": [
+      "Torneo Diario: un reto distinto cada día",
+      "Tienda con Ofertas, Cofre del Barrio y combos",
+      "Personajes nuevos: Aylinchis y @chuseje"
+    ],
+    "enlace": "https://apps.apple.com/app/id6828329180"
   },
   "mensaje": {
     "id": 0,
