@@ -1,11 +1,11 @@
 {
   "android": {
-    "codigo": 21,
-    "nombre": "1.0.21",
+    "codigo": 20,
+    "nombre": "1.0.20",
     "novedades": [
-      "Tu progreso se guarda en Google Play",
-      "Álbum: cartas de torneo y Rey de los Torneos",
-      "Retas diarias y avatar de mujer renovado"
+      "Torneo Diario: un reto distinto cada día",
+      "Tienda con Ofertas, Cofre del Barrio y combos",
+      "Personajes nuevos: Aylinchis y @chuseje"
     ]
   },
   "ios": {
