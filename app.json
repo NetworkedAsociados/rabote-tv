@@ -9,12 +9,12 @@
     ]
   },
   "ios": {
-    "codigo": 20,
-    "nombre": "1.0.20",
+    "codigo": 22,
+    "nombre": "1.0.22",
     "novedades": [
-      "Torneo Diario: un reto distinto cada día",
-      "Tienda con Ofertas, Cofre del Barrio y combos",
-      "Personajes nuevos: Aylinchis y @chuseje"
+      "Tu progreso se guarda en Game Center",
+      "8 cartas nuevas de torneo y el título Rey de los Torneos",
+      "Avatar de mujer renovado y perfiles corregidos"
     ],
     "enlace": "https://apps.apple.com/app/id6828329180"
   },
